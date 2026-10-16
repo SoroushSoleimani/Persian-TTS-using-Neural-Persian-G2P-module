@@ -19,10 +19,16 @@ class PersianTextCleaner:
         'آ': 'آ',
     }
 
-    DIGIT_MAP = {
-        '0': '۰', '1': '۱', '2': '۲', '3': '۳', '4': '۴',
-        '5': '۵', '6': '۶', '7': '۷', '8': '۸', '9': '۹'
-    }
+    DIACRITICS = [
+        'َ',  # Fatha (a)
+        'ِ',  # Kasra (e)
+        'ُ',  # Damma (o)
+        'ّ',  # Tashdid
+        'ً',  # Tanwin Fatha
+        'ٌ',  # Tanwin Damma
+        'ٍ',  # Tanwin Kasra
+        'ْ',  # Sukun
+    ]
 
     ZWNJ = '‌'
 
@@ -34,9 +40,16 @@ class PersianTextCleaner:
             text = text.replace(ar, fa)
         return text
 
+    def strip_diacritics(self, text: str) -> str:
+        for dia in self.DIACRITICS:
+            text = text.replace(dia, '')
+        return text
+
     def clean(self, text: str) -> str:
         text = unicodedata.normalize('NFKC', text)
         text = self.normalize_characters(text)
+        if self.remove_diacritics:
+            text = self.strip_diacritics(text)
         text = re.sub(r'[\s]+', ' ', text)
         text = re.sub(r'‌{2,}', self.ZWNJ, text)
         return text.strip()
