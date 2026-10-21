@@ -1,11 +1,13 @@
 """
 End-to-End Persian TTS Pipeline.
 Coordinates cleaner, phonemizer, acoustic model, and audio processor.
+Includes GPU memory optimization and memory cleanup hooks.
 """
 
 from pathlib import Path
 from typing import Union, Optional
 import numpy as np
+import torch
 from .config import TTSConfig
 from .cleaner import PersianTextCleaner
 from .models.vits import VitsSynthesizer
@@ -28,6 +30,9 @@ class PersianTTS:
             waveform = self.audio_processor.trim_silence(waveform)
         if self.config.audio.normalize_volume:
             waveform = self.audio_processor.normalize_peak(waveform)
+
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
             
         return waveform
 
