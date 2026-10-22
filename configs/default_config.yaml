@@ -1,0 +1,12 @@
+audio:
+  sampling_rate: 16000
+  trim_silence: true
+  normalize_volume: true
+  silence_threshold_db: -40.0
+
+model:
+  model_name_or_path: "facebook/mms-tts-fas"
+  device: "auto"
+  use_half_precision: false
+
+clean_text: true
