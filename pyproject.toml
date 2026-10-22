@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "persian-tts"
+version = "1.0.0"
+description = "A modular Persian Text-to-Speech system with Neural G2P and VITS synthesis"
+readme = "README.md"
+authors = [{ name = "Soroush Soleimani" }]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.35.0",
+    "scipy>=1.10.0",
+    "numpy>=1.23.0",
+    "pyyaml>=6.0",
+    "tqdm>=4.65.0"
+]
+
+[project.scripts]
+persian-tts = "persian_tts.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
