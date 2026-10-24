@@ -233,21 +233,6 @@ python -m unittest discover tests
 
 Contributions are welcome! Whether submitting bug reports, suggesting phonological rule refinements, or contributing training scripts, please refer to [CONTRIBUTING.md](CONTRIBUTING.md) and adhere to our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
----
-
-## Citation
-
-If this codebase or the research artifacts contribute to your academic or commercial project, please cite:
-
-```bibtex
-@misc{soleimani2026persiantts,
-  author = {Soleimani, Soroush},
-  title = {Persian-TTS: Persian Text-to-Speech using Neural G2P and VITS},
-  year = {2026},
-  publisher = {GitHub},
-  howpublished = {\\url{https://github.com/SoroushSoleimani/Persian-TTS-using-Neural-Persian-G2P-module}}
-}
-```
 
 ---
 
