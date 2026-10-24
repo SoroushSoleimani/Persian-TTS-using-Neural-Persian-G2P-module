@@ -11,7 +11,7 @@
 
 **An end-to-end, high-fidelity neural Text-to-Speech (TTS) framework for the Persian language, combining Grapheme-to-Phoneme (G2P) disambiguation and VITS variational waveform synthesis.**
 
-[Architecture](docs/ARCHITECTURE.md) • [G2P Guide](docs/G2P_GUIDE.md) • [Benchmarks](docs/BENCHMARKS.md) • [API Reference](docs/API_REFERENCE.md) • [Notebooks](notebooks/)
+[Architecture](docs/ARCHITECTURE.md) • [G2P Guide](docs/G2P_GUIDE.md) • [API Reference](docs/API_REFERENCE.md) • [Notebooks](notebooks/)
 
 </div>
 
@@ -199,22 +199,6 @@ print(f"Sample count: {len(waveform)}, Max amplitude: {waveform.max():.2f}")
 └── text.txt                              # Default Persian input text
 ```
 
----
-
-## Benchmarks & Performance
-
-Evaluated on Persian phonology datasets across hardware configurations:
-
-| Metric | Metric Value | Note |
-|:---|:---:|:---|
-| **Sampling Rate** | 16,000 Hz | Standard high-fidelity voice output |
-| **G2P Accuracy** | 98.0% | Character and phoneme alignment level |
-| **Phoneme Error Rate (PER)** | ~2.1% | Evaluated on holdout validation set |
-| **CUDA Real-Time Factor (RTF)** | **0.06** | ~16x faster than real time (GTX 1650) |
-| **CPU Real-Time Factor (RTF)** | **0.38** | ~2.6x faster than real time (Intel i7) |
-| **Mean Opinion Score (MOS)** | 4.12 / 5.0 | Naturalness and intelligibility |
-
-For full benchmarking methodologies and ablation details, see [docs/BENCHMARKS.md](docs/BENCHMARKS.md).
 
 ---
 
