@@ -11,6 +11,8 @@
 
 **An end-to-end, high-fidelity neural Text-to-Speech (TTS) framework for the Persian language, combining Grapheme-to-Phoneme (G2P) disambiguation and VITS variational waveform synthesis.**
 
+> **Note:** This repository is based on and extends [mrrhbr/Persian-TTS-using-Neural-Persian-G2P-module](https://github.com/mrrhbr/Persian-TTS-using-Neural-Persian-G2P-module).
+
 [Architecture](docs/ARCHITECTURE.md) • [G2P Guide](docs/G2P_GUIDE.md) • [API Reference](docs/API_REFERENCE.md) • [Notebooks](notebooks/)
 
 </div>
@@ -217,6 +219,12 @@ python -m unittest discover tests
 
 Contributions are welcome! Whether submitting bug reports, suggesting phonological rule refinements, or contributing training scripts, please refer to [CONTRIBUTING.md](CONTRIBUTING.md) and adhere to our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
+
+---
+
+## Acknowledgments & Attribution
+
+This project is directly based on, builds upon, and adapts the repository [Persian-TTS-using-Neural-Persian-G2P-module](https://github.com/mrrhbr/Persian-TTS-using-Neural-Persian-G2P-module) by [mrrhbr](https://github.com/mrrhbr). We gratefully acknowledge their original implementation, research on Persian phonology, dataset curation, and neural G2P sequence modeling.
 
 ---
 
