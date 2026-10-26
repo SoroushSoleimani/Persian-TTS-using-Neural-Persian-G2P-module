@@ -35,13 +35,13 @@ This repository solves this bottleneck through a **two-stage decoupled neural pi
 
 ## Key Features
 
-- 🚀 **Zero-Setup Inference:** Out-of-the-box synthesis powered by Meta MMS pretrained VITS checkpoint (`facebook/mms-tts-fas`).
-- 🧠 **Phonological Awareness:** Explicit G2P module addressing Persian vowel omissions, Ezafe enclitics, and silent letters.
-- 🧹 **Robust Normalization:** Automated standardization of Arabic-script variants (ي/ک), morpheme boundaries, and Tashdid/Tanwin diacritics.
-- 📦 **Modular Package Design:** Clean, extensible structure under `src/persian_tts` with typed configurations (`dataclasses`) and decoupled modules.
-- 💻 **Flexible Interface:** CLI with single-command synthesis, file batch processing, and an interactive shell mode.
-- ⚡ **Hardware Acceleration:** Automatic CUDA device detection with seamless CPU fallback and memory optimization.
-- 🔬 **Comprehensive Research Suite:** Six Jupyter notebooks detailing phoneme analysis, acoustic evaluation, and full training routines.
+-  **Zero-Setup Inference:** Out-of-the-box synthesis powered by Meta MMS pretrained VITS checkpoint (`facebook/mms-tts-fas`).
+-  **Phonological Awareness:** Explicit G2P module addressing Persian vowel omissions, Ezafe enclitics, and silent letters.
+-  **Robust Normalization:** Automated standardization of Arabic-script variants (ي/ک), morpheme boundaries, and Tashdid/Tanwin diacritics.
+-  **Modular Package Design:** Clean, extensible structure under `src/persian_tts` with typed configurations (`dataclasses`) and decoupled modules.
+-  **Flexible Interface:** CLI with single-command synthesis, file batch processing, and an interactive shell mode.
+-  **Hardware Acceleration:** Automatic CUDA device detection with seamless CPU fallback and memory optimization.
+-  **Comprehensive Research Suite:** Six Jupyter notebooks detailing phoneme analysis, acoustic evaluation, and full training routines.
 
 ---
 
